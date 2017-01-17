@@ -1,4 +1,10 @@
 $(document).ready(function() {
+  var something = getData();
+  
+  console.log(getData());
+  for(var i in something.data){
+    $("#gifs").append(something.data[i][0])
+  }
   // 1. Update page.js to print the result of `getData()` to the console when the page loads.
   // 2. Add the images returned in `getData()` to the `#gifs` div on index.html. 
   //    Use functions to display the data!!
